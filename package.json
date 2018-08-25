@@ -1,0 +1,29 @@
+{
+    "name": "ts-simple-module",
+    "version": "0.0.1",
+    "description": "@todo",
+    "main": "dist/index",
+    "types": "dist/index",
+    "scripts": {
+        "start": "npm run build:live",
+        "prebuild": "rm -frv dist/*",
+        "build": "./node_modules/.bin/tsc",
+        "prebuild:live": "rm -frv dist/*",
+        "build:live": "./node_modules/.bin/tsc --watch"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Alejandro Dario Simi",
+        "url": "http://daemonraco.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/daemonraco/ts-simple-module.git"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^8.10.20",
+        "typescript": "^2.9.2"
+    },
+    "dependencies": {}
+}
